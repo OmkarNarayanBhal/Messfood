@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "255056617574",
+    "firebase_url": "https://messfood-33a8e-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "messfood-33a8e",
+    "storage_bucket": "messfood-33a8e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:255056617574:android:c2f55e6676d4a6c5064da7",
+        "android_client_info": {
+          "package_name": "com.example.messfood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "255056617574-enrk41hpmnihkvbofeftdscf93gid3ff.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3n1oxc-bj4UZEbPqUVm8aSe5PKaW2N-Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "255056617574-enrk41hpmnihkvbofeftdscf93gid3ff.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
