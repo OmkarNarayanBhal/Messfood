@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1037746747208",
+    "firebase_url": "https://foodiee-dfd2d-default-rtdb.firebaseio.com",
+    "project_id": "foodiee-dfd2d",
+    "storage_bucket": "foodiee-dfd2d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1037746747208:android:b3faab14398a3df7c8a57d",
+        "android_client_info": {
+          "package_name": "com.example.messfood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1037746747208-jv6g436nvsli2cvbln0m9alv705vc0jk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKLkE3ddqeX9uIS35GcE7AlfRJ-dOXIi4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1037746747208-jv6g436nvsli2cvbln0m9alv705vc0jk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
