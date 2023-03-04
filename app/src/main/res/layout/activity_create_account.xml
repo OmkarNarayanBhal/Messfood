@@ -58,10 +58,10 @@
             android:layout_marginTop="12dp"
             android:background="@drawable/rounded_corner"
             android:hint="Email Id"
-            android:textColorHint="@color/white"
             android:inputType="textEmailAddress"
             android:padding="16dp"
             android:textColor="@color/white"
+            android:textColorHint="@color/white"
             android:textSize="20sp" />
 
         <EditText

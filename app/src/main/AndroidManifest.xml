@@ -12,6 +12,9 @@
         android:theme="@style/Theme.Messfood"
         tools:targetApi="33">
         <activity
+            android:name=".Adminhome"
+            android:exported="false" />
+        <activity
             android:name=".LoginActivity"
             android:exported="false" />
         <activity
