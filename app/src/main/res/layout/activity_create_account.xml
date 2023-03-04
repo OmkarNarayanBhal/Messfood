@@ -11,11 +11,11 @@
 
     <ImageView
         android:id="@+id/sign_up_icon"
-        android:layout_width="109dp"
-        android:layout_height="103dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:layout_centerHorizontal="true"
         android:layout_marginVertical="32dp"
-        android:src="@drawable/sign_up" />
+        android:src="@drawable/foodieelogobanner" />
 
     <LinearLayout
         android:layout_width="match_parent"
