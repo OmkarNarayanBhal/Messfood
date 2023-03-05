@@ -23,12 +23,12 @@ public class  splashscreen extends AppCompatActivity {
 
             public void run(){
                 try {
-                    sleep(4000);
+                    sleep(2000);
                 }catch (Exception ex){
                     ex.printStackTrace();
                 }
                 finally {
-                    Intent intent = new Intent(splashscreen.this, CreateAccountActivity.class);
+                    Intent intent = new Intent(splashscreen.this, LoginActivity.class);
                     startActivity(intent);
                     finish();
                 }
