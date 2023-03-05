@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -19,12 +20,14 @@ import com.google.firebase.database.ValueEventListener;
 
 public class LoginActivity extends AppCompatActivity {
     Button button;
+    ProgressBar progressBar;
     DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReferenceFromUrl("https://foodiee-dfd2d-default-rtdb.firebaseio.com/");
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        progressBar=findViewById(R.id.progress_bar);
         final EditText username = findViewById(R.id.email_edit_text);
         final EditText password = findViewById(R.id.password_edit_text);
         final Button LoginBtn = findViewById(R.id.login_btn);
@@ -34,6 +37,7 @@ public class LoginActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                progressBar.setVisibility(View.VISIBLE);
                 final String usernameTxt = username.getText().toString();
                 final String PasswordTxt = password.getText().toString();
 
@@ -55,10 +59,12 @@ public class LoginActivity extends AppCompatActivity {
                                     Toast.makeText(LoginActivity.this, "Successfully Logged in",Toast.LENGTH_SHORT).show();
 
                                     //Starting student form
+
                                     startActivity(new Intent(LoginActivity.this, MainActivity.class));
                                     finish();
                                 }
                                 else {
+                                    progressBar.setVisibility(View.GONE);
                                     Toast.makeText(LoginActivity.this,"Wrong Credentials",Toast.LENGTH_SHORT).show();
                                 }
 
