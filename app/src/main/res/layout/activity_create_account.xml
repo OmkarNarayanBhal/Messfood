@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:background="@color/black"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,6 +8,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CreateAccountActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="NestedScrolling">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
     <ImageView
         android:id="@+id/sign_up_icon"
@@ -50,6 +59,18 @@
         android:layout_marginVertical="32dp"
         android:hapticFeedbackEnabled="true"
         android:orientation="vertical">
+        <EditText
+            android:id="@+id/UniqueID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/rounded_corner"
+            android:hint="USER ID"
+            android:inputType="text"
+            android:padding="16dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/email_edit_text"
@@ -58,7 +79,7 @@
             android:layout_marginTop="12dp"
             android:background="@drawable/rounded_corner"
             android:hint="Email Id"
-            android:inputType="textEmailAddress"
+            android:inputType="text"
             android:padding="16dp"
             android:textColor="@color/white"
             android:textColorHint="@color/white"
@@ -133,5 +154,7 @@
             android:text="Login"/>
 
     </LinearLayout>
+        </RelativeLayout>
 
-</RelativeLayout>
+</ScrollView>
+</ScrollView>
