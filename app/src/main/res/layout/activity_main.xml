@@ -21,7 +21,7 @@
                 android:layout_width="250dp"
                 android:layout_height="70dp"
                 android:src="@drawable/foodieelogo"
-                android:paddingRight="150dp"></ImageView>
+                android:paddingEnd="150dp" />
 
         </RelativeLayout>
     </androidx.appcompat.widget.Toolbar>
@@ -124,6 +124,22 @@
         </FrameLayout>
     </FrameLayout>
 
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fav_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:src="@drawable/qr_icon"
+        app:elevation="6dp"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_nav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_nav"
