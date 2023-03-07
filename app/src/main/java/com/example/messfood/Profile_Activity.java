@@ -30,10 +30,10 @@ public class Profile_Activity extends AppCompatActivity {
                         startActivity(new Intent(getApplicationContext(),Order_Activity.class));
                         overridePendingTransition(0,0);
                         return true;
-                    case R.id.scan:
-                        startActivity(new Intent(getApplicationContext(),Scan_Activity.class));
-                        overridePendingTransition(0,0);
-                        return true;
+//                    case R.id.scan:
+//                        startActivity(new Intent(getApplicationContext(),Scan_Activity.class));
+//                        overridePendingTransition(0,0);
+//                        return true;
                     case R.id.profile:
                         return true;
 

@@ -28,10 +28,10 @@ public class Order_Activity extends AppCompatActivity {
                         return true;
                     case R.id.order:
                         return true;
-                    case R.id.scan:
-                        startActivity(new Intent(getApplicationContext(),Scan_Activity.class));
-                        overridePendingTransition(0,0);
-                        return true;
+//                    case R.id.scan:
+//                        startActivity(new Intent(getApplicationContext(),Scan_Activity.class));
+//                        overridePendingTransition(0,0);
+//                        return true;
                     case R.id.profile:
                         startActivity(new Intent(getApplicationContext(),Profile_Activity.class));
                         overridePendingTransition(0,0);

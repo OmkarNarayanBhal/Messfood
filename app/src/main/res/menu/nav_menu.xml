@@ -6,9 +6,9 @@
     <item android:id="@+id/order"
         android:title="Order"
         android:icon="@drawable/food_icon"/>
-    <item android:id="@+id/scan"
-        android:title="Scan"
-        android:icon="@drawable/qr_icon"/>
+<!--    <item android:id="@+id/scan"-->
+<!--        android:title="Scan"-->
+<!--        android:icon="@drawable/qr_icon"/>-->
     <item android:id="@+id/profile"
         android:title="Profile"
         android:icon="@drawable/user_icon"/>
