@@ -80,14 +80,13 @@
 
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/logout_btn"
             android:layout_width="match_parent"
-            android:id="@+id/login_btn"
             android:layout_height="64dp"
-            android:text="LogIn"
             android:layout_marginTop="12dp"
+            android:text="LogIn"
             android:textSize="16sp"
-            app:backgroundTint="@color/orange"
-            />
+            app:backgroundTint="@color/orange" />
 
         <ProgressBar
             android:layout_width="24dp"

@@ -30,9 +30,9 @@ public class LoginActivity extends AppCompatActivity {
         progressBar=findViewById(R.id.progress_bar);
         final EditText username = findViewById(R.id.email_edit_text);
         final EditText password = findViewById(R.id.password_edit_text);
-        final Button LoginBtn = findViewById(R.id.login_btn);
+        final Button LoginBtn = findViewById(R.id.logout_btn);
 
-        button = findViewById(R.id.login_btn);
+        button = findViewById(R.id.logout_btn);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
