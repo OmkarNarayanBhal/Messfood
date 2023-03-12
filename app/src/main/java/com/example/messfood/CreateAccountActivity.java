@@ -18,7 +18,10 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.util.HashMap;
+
 public class CreateAccountActivity extends AppCompatActivity {
+
     ProgressBar progressBar;
     DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReferenceFromUrl("https://foodiee-dfd2d-default-rtdb.firebaseio.com/");
     @Override
@@ -44,8 +47,13 @@ public class CreateAccountActivity extends AppCompatActivity {
                 final String conPasswordtxt = confirmpassword.getText().toString();
 
                 //checking no feilds are empty
-                if (emailtxt.isEmpty() || uniquetxt.isEmpty() || passwordtxt.isEmpty() || conPasswordtxt.isEmpty()){
-                    Toast.makeText(CreateAccountActivity.this, "Please fill all feilds", Toast.LENGTH_SHORT).show();
+                if(uniquetxt.equals("")){
+                    Unique.setError("Please enter the user ID");
+                }
+                else if(emailtxt.equals("")){
+                    Email.setError("Please enter the email ID");
+                }  else if(passwordtxt.equals("")){
+                    password.setError("Please enter the Password");
                 }
                 //check if passwords are matching with each other
                 else if (!passwordtxt.equals(conPasswordtxt)){
