@@ -17,11 +17,6 @@
             android:layout_height="wrap_content"
             android:layout_width="wrap_content">
 
-            <ImageView
-                android:layout_width="250dp"
-                android:layout_height="70dp"
-                android:src="@drawable/pnglogo"
-                android:paddingEnd="180dp" />
 
         </RelativeLayout>
     </androidx.appcompat.widget.Toolbar>
@@ -45,79 +40,49 @@
         app:layout_constraintBottom_toTopOf="@+id/bottom_nav"
         app:layout_constraintTop_toBottomOf="@+id/toolbar">
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="160dp"
-            android:layout_height="356dp"
-            android:layout_gravity="bottom|start"
-            android:layout_margin="15dp"
-            app:cardBackgroundColor="@color/teal_200"
-            app:cardCornerRadius="18dp"
-            app:cardElevation="4dp">
-
-            <!-- Add your content here -->
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="16dp">
-
-                <ImageView
-                    android:id="@+id/my_image_view"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/feedback_icon" />
-
-                <TextView
-                    android:id="@+id/my_text_view"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_toEndOf="@id/my_image_view"
-                    android:text="Write Feedback" />
-
-            </RelativeLayout>
-
-        </androidx.cardview.widget.CardView>
+        <Button
+            android:id="@+id/elevatedButton"
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:layout_width="390dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="100dp"
+            android:text="Feedback"
+            android:textSize="22dp"
+            android:textColor="@color/black"
+            app:backgroundTint="@color/orange"
+            app:elevation="1dp"
+            app:icon="@drawable/feedback_icon"
+            app:iconPadding="4dp"
+            app:iconSize="22dp"
+            app:iconTint="@color/black"
+            app:strokeWidth="6dp" />
 
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="134dp">
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="160dp"
-                android:layout_height="356dp"
-                android:layout_gravity="bottom|end"
-                android:layout_margin="15dp"
-                app:cardBackgroundColor="@color/teal_200"
-                app:cardCornerRadius="18dp"
-                app:cardElevation="4dp">
+            <Button
+                android:id="@+id/elevatedButton2"
+                style="@style/Widget.Material3.Button.ElevatedButton"
+                android:layout_width="390dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="30dp"
+                android:text="Order"
+                android:textSize="22dp"
+                android:textColor="@color/black"
+                app:backgroundTint="@color/orange"
+                app:elevation="1dp"
+                app:icon="@drawable/order"
+                app:iconPadding="4dp"
+                app:iconSize="22dp"
+                app:iconTint="@color/black"
 
-                <!-- Add your content here -->
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="16dp">
-
-                    <ImageView
-                        android:id="@+id/myimg"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/food_icon" />
-
-                    <TextView
-                        android:id="@+id/my_textview"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_toEndOf="@id/myimg"
-                        android:text="Order Food" />
-
-                </RelativeLayout>
-
-            </androidx.cardview.widget.CardView>
+                app:strokeWidth="6dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical"
+                android:gravity="center"
                 android:orientation="vertical">
 
             </LinearLayout>
@@ -156,5 +121,16 @@
         app:menu="@menu/nav_menu">
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="970dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="80dp"
+        android:src="@drawable/pnglogo"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_nav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
